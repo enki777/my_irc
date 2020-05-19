@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    <title>Connexion my_irc</title>
+</head>
+
+<body>
+    <div class="container bg-dark rounded chat-container">
+        <div class="row rounded chat-header">
+            <h1 class="text-primary"><i class="fas fa-gamepad"></i> my_irc</h1>
+            <a class="border border-primary rounded" href="index.html">quitter salle</a>
+        </div>
+        <div class="row sidebar-chat">
+            <div class="col-3">
+                <div id="salle">
+                    <h4 class="text-white"><i class="fas fa-comments"></i> Nom de salle :</h4>
+                    <h2 id="room-name"></h2>
+                </div>
+                <div id="utilisateursListe">
+                    <h4 class="text-white"><i class="fas fa-users"></i> Utilisateurs :</h4>
+                    <ul id="users"></ul>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="chat-messages rounded"></div>
+            </div>
+        </div>
+        <form id="chat-form" class="rounded-bottom">
+            <div class="row">
+                <div class="col-10">
+                    <input id="msg" type="text" class="form-control" placeholder="écrire un message" required
+                        autocomplete="off" />
+                </div>
+                <div class="col-2 btn-chat-form">
+                    <button class="btn btn-dark"><i class="fas fa-paper-plane"></i>  Envoyer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- permet de recuperer les querystring de l url -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

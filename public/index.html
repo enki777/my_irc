@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Connexion my_irc</title>
+</head>
+
+<body>
+    <div class="container bg-dark rounded connexion-affichage">
+        <div class="rounded d-flex justify-content-center titre-form">
+            <h1 class="text-primary"><i class="fas fa-gamepad"></i> my_irc</h1>
+        </div>
+        <form action="chat.html" id="connexion-form">
+            <div class="form-group">
+                <label for="pseudo" class="text-white">Pseudo</label>
+                <input type="text" class="form-control" name="pseudo" id="pseudo" placeholder="Entrez votre pseudo">
+                <small id="pseudoHelp" class="form-text text-muted">Votre pseudo sera visible de tous.</small>
+            </div>
+            <div class="form-group">
+                <label for="salle" class="text-white">Salle</label>
+                <select name="salle" id="salle" class="form-control">
+                    <option value="Valorant">Valorant</option>
+                    <option value="LOL">LOL</option>
+                    <option value="CS GO">CS GO</option>
+                    <option value="Warzone">Warzone</option>
+                    <option value="TFT">TFT</option>
+                    <option value="HS">HS</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+	background-image: url('./images/apconnexion.png');
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.connexion-affichage {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 150px;
+}
+
+.titre-form {
+	background-color: #2e343a!important;
+	padding: 15px;
+}
+
+#connexion-form {
+	padding: 40px;
+}
+
+.chat-container {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 150px;
+}
+
+.chat-header {
+	background-color: #2e343a!important;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-header>a{
+	text-decoration: none; 
+	padding: 10px;
+}
+
+.sidebar-chat{
+	padding-left: 15px;
+}
+
+#room-name{
+	padding-left: 45px;
+}
+
+#utilisateursListe{
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+
+#users{
+	padding-left: 45px;
+}
+
+#chat-form{
+	padding: 20px; 
+	background-color: #777;
+}
+
+.btn-chat-form{
+	padding-left: 40px; padding-right: 40px;
+}
+
+/* affichage utilistateurs pseudo sidebar */
+
+#utilisateursListe>ul>li {
+	color: green;
+}
+
+/* espace de chat col-9  */
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+	/* background-color: #FFF; */
+}
+
+/* message bulles */
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: rgb(236, 236, 236);
+	border-radius: 5px;
+}
+
+/* nom du bot */
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: red;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+/* heure du msg */
+
+.chat-messages .message .meta span {
+	color: #007bff!important;
+}
